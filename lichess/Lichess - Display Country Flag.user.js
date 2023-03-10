@@ -2,8 +2,8 @@
 // @name        Lichess - Display Country Flag
 // @name:pt     Lichess - Exibir bandeira do país
 // @description Display username + country flag in game ( if user registered his country in 'bio') + rating
-// @include     https://lichess.org/*
-// @version     2
+// @match       https://lichess.org/*
+// @version     2.1
 // @grant       none
 // @run-at      document-idle
 // @author      Sérgio Glórias
