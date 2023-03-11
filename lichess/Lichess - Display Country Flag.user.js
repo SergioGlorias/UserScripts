@@ -3,7 +3,7 @@
 // @name:pt     Lichess - Exibir bandeira do país
 // @description Display username + country flag in game ( if user registered his country in 'bio') + rating
 // @match       https://lichess.org/*
-// @version     2.1
+// @version     3
 // @grant       none
 // @run-at      document-idle
 // @author      Sérgio Glórias
@@ -28,12 +28,11 @@ for (let i = 0; i < utop.length; i++) {
           "https://lichess1.org/assets/_Dxy720/images/flags/" +
           data.profile.country +
           ".png";
-        const im = new Image(22, 22);
+        const im = new Image();
         im.src = urlflag;
         let e = d.getElementsByTagName("a");
         im.style.marginRight = "5px";
         im.style.float = "left";
-        im.classList.add("flag");
         e[0].appendChild(im);
       }
     });
