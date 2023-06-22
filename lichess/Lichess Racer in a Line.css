@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name         Lichess Racer in a Line
+@version      1.0.0
+@namespace    https://github.com/SergioGlorias/UserScripts
+==/UserStyle== */
+
+@-moz-document url-prefix("https://lichess.org/racer/") {
+#main-wrap {
+    padding-right: 50px
+}
+
+div.racer {
+    grid-template-areas: "race board side" "history history history";
+    grid-template-columns: minmax(240px, 550px) var(--col2-uniboard-width) minmax(240px, 400px)
+}
+}
