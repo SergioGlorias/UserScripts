@@ -3,7 +3,7 @@
 // @name:pt     Lichess - Exibir bandeira do país
 // @description Display username + country flag in game ( if user registered his country in 'bio') + rating
 // @match       https://lichess.org/*
-// @version     4
+// @version     4.1
 // @grant       none
 // @run-at      document-idle
 // @author      Sérgio Glórias
@@ -25,8 +25,8 @@ for (let i = 0; i < utop.length; i++) {
     .then((data) => {
       if (data.profile && (data.profile.country || data.profile.flag)) {
         const urlflag =
-          "https://lichess1.org/assets/_DqBjn6/images/flags/" +
-          data.profile.country ?? data.profile.flag +
+          "https://lichess1.org/assets/_FSSbPA/images/flags/" +
+          data.profile.flag +
           ".png";
         const im = new Image();
         im.src = urlflag;
